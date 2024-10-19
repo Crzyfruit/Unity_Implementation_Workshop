@@ -25,15 +25,15 @@ public class AudioButtonHandler : MonoBehaviour
         switch (musicMode)
         {
             case MusicMode.PLAY:
-                //Play Music
+                AudioManager.Instance.PlayMusic();
                 break;
 
             case MusicMode.STOP:
-                //Stop Music
+                AudioManager.Instance.StopMusic();
                 break;
 
             case MusicMode.SWITCH:
-                //Switch Music
+                AudioManager.Instance.SwitchMusic();
                 break;
         }
     }

@@ -512,9 +512,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3957ee533395f2a4981fdd11d7818adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HoverboardImpact: {fileID: 8300000, guid: 3b2eb419588a04d46ad99ee4dc1d8ce6, type: 3}
-  HoverboardLoop: {fileID: 8300000, guid: cfbe8d3ecc6b1b642b3becdadd87a7c6, type: 3}
-  HoverboardRelease: {fileID: 8300000, guid: 7f779122b9b123445a1c418cdf132bff, type: 3}
+  source: {fileID: 0}
+  start: {fileID: 8300000, guid: 3b2eb419588a04d46ad99ee4dc1d8ce6, type: 3}
+  stop: {fileID: 8300000, guid: 7f779122b9b123445a1c418cdf132bff, type: 3}
+  loop: {fileID: 8300000, guid: cfbe8d3ecc6b1b642b3becdadd87a7c6, type: 3}
 --- !u!82 &708092963
 AudioSource:
   m_ObjectHideFlags: 0
@@ -526,7 +527,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
