@@ -35,13 +35,12 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic()
     {
-        BetterDebug.Log("hej, jag heter eldar :)", "orange");
+        BetterDebug.Log("Music is Playing", "orange");
         audioSource.Play();
     }
 
     public void StopMusic()
     {
-        Debug.Log("<color=orange>Stop Music</color>");
         audioSource.Stop();
     }
 
