@@ -50,8 +50,7 @@ public class AudioTrigger : MonoBehaviour
             {
                 if (source.isPlaying)
                 {
-                    StartCoroutine(FadeAudio(source, 2f, 1f));
-                    source.Stop();
+                    StartCoroutine(FadeAudio(source, 2f,0));
                     Debug.Log("Exit!");
                 }
             }
@@ -68,6 +67,9 @@ public class AudioTrigger : MonoBehaviour
             source.volume = Mathf.Lerp(start, targetVolume, currentTime / duration);
             yield return null;
         }
-        yield break;
+
+        if (source.volume <= 0)
+            source.Stop();
+
     }
 }
