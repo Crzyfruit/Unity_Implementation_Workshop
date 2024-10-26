@@ -859,6 +859,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hello
       objectReference: {fileID: 0}
+    - target: {fileID: 4749949379412957107, guid: 6b5060c53b5a3374e91081cefa112ec7, type: 3}
+      propertyPath: OnExit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4749949379412957107, guid: 6b5060c53b5a3374e91081cefa112ec7, type: 3}
+      propertyPath: OnEnter
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

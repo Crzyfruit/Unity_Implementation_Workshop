@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using Unity;
+using static Unity.VisualScripting.Member;
 
 public class AudioManager : MonoBehaviour
 {
@@ -48,8 +49,19 @@ public class AudioManager : MonoBehaviour
     {
         audioSource.Stop();
 
-        audioSource.clip = MusicPlaylist[Random.Range(0, 2)];
+        PlayNextClip();
+        PlayCurrentClip();
+    }
 
+    private void PlayNextClip()
+    {
+        currentSong = (currentSong + 1) % MusicPlaylist.Length;
+        PlayCurrentClip();
+    }
+
+    private void PlayCurrentClip()
+    {
+        audioSource.clip = MusicPlaylist[currentSong];
         audioSource.Play();
     }
 }
