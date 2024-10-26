@@ -35,7 +35,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic()
     {
-        Debug.Log("<color=orange>Play Music</color>");
+        BetterDebug.Log("hej, jag heter eldar :)", "orange");
         audioSource.Play();
     }
 
