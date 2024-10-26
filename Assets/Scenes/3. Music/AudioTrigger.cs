@@ -36,7 +36,6 @@ public class AudioTrigger : MonoBehaviour
                 {
                     source.Play();
                     StartCoroutine(FadeAudio(source, 2f, 1f));
-                    Debug.Log("Enter!");
                 }
             }
         }
@@ -51,7 +50,6 @@ public class AudioTrigger : MonoBehaviour
                 if (source.isPlaying)
                 {
                     StartCoroutine(FadeAudio(source, 2f,0));
-                    Debug.Log("Exit!");
                 }
             }
         }
@@ -61,6 +59,7 @@ public class AudioTrigger : MonoBehaviour
     {
         float currentTime = 0;
         float start = source.volume;
+
         while (currentTime < duration)
         {
             currentTime += Time.deltaTime;
