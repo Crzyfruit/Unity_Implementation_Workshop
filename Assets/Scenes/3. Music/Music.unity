@@ -286,8 +286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeDuration: 1
-  OnEnter: 0
-  OnExit: 0
+  OnEnter: 1
+  OnExit: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

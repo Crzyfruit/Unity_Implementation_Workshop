@@ -69,6 +69,5 @@ public class AudioTrigger : MonoBehaviour
 
         if (source.volume <= 0)
             source.Stop();
-
     }
 }
